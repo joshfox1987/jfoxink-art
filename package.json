@@ -1,0 +1,26 @@
+{
+  "name": "jfoxink-art",
+  "version": "1.0.0",
+  "description": "J Fox Ink website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Building J Fox Ink website...' && echo 'Build completed successfully!'",
+    "start": "echo 'Starting J Fox Ink website...'",
+    "test": "echo 'No tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshfox1987/jfoxink-art.git"
+  },
+  "keywords": [
+    "art",
+    "website",
+    "portfolio"
+  ],
+  "author": "J Fox Ink",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshfox1987/jfoxink-art/issues"
+  },
+  "homepage": "https://github.com/joshfox1987/jfoxink-art#readme"
+}
