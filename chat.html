@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Us - JFoxInk.Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fredoka+One:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JFoxInk.Art</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="portfolio.html" class="nav-link">Art Gallery</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="bio.html" class="nav-link">Bio</a>
+                <a href="spreadshirt.html" class="nav-link">Shop</a>
+                <a href="social.html" class="nav-link">Social Media</a>
+                <a href="community.html" class="nav-link">In the Community</a>
+                <a href="chat.html" class="nav-link active">Chat with Us</a>
+                <a href="jfoxai.html" class="nav-link">JFox AI</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Let's Chat!</h1>
+            <p class="page-subtitle">Multiple ways to connect and get your questions answered</p>
+        </div>
+    </section>
+
+    <!-- Chat Options -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <p>Instant messaging for quick questions about projects, pricing, or availability.</p>
+                    <div class="chat-status">
+                        <span class="status-indicator online"></span>
+                        <span>Usually online 9AM-6PM PST</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="openLiveChat()">Start Chat</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Text/SMS</h3>
+                    <p>Send me a text message for quick updates or urgent project communications.</p>
+                    <div class="chat-status">
+                        <span>📞 (555) 123-JFOX</span>
+                    </div>
+                    <a href="sms:(555)123-5369" class="btn btn-primary">Send Text</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>Detailed project discussions, file sharing, and comprehensive communication.</p>
+                    <div class="chat-status">
+                        <span>⏱️ Response within 4 hours</span>
+                    </div>
+                    <a href="mailto:hello@jfoxink.art" class="btn btn-primary">Send Email</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📞</div>
+                    <h3>Phone Call</h3>
+                    <p>Schedule a voice call to discuss complex projects or get personalized consultation.</p>
+                    <div class="chat-status">
+                        <span>📅 By appointment</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Schedule Call</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎥</div>
+                    <h3>Video Chat</h3>
+                    <p>Face-to-face meetings for detailed project planning and creative collaboration.</p>
+                    <div class="chat-status">
+                        <span>💻 Zoom/Teams available</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Book Video Call</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>JFox AI Assistant</h3>
+                    <p>Get instant answers about services, pricing, and general information 24/7.</p>
+                    <div class="chat-status">
+                        <span>🚀 Always available</span>
+                    </div>
+                    <a href="jfoxai.html" class="btn btn-primary">Chat with AI</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Guidelines -->
+    <section class="quick-nav">
+        <div class="container">
+            <h2 class="section-title">How We Chat</h2>
+            <div class="nav-cards">
+                <div class="nav-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Quick Response</h3>
+                    <p>Most messages get a response within 1-4 hours during business days</p>
+                </div>
+                <div class="nav-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Direct & Clear</h3>
+                    <p>No corporate speak - just honest, straightforward communication about your art</p>
+                </div>
+                <div class="nav-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Collaborative</h3>
+                    <p>We work together to bring your vision to life, with open dialogue throughout</p>
+                </div>
+                <div class="nav-card">
+                    <div class="card-icon">📱</div>
+                    <h3>Multi-Platform</h3>
+                    <p>Use whatever communication method works best for you and your project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Chat -->
+    <section class="featured-work">
+        <div class="container">
+            <h2 class="section-title">Quick Answers</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>💰 What are your rates?</h4>
+                    <p>Pricing varies by project complexity. Logo design starts at $150, character design at $200. Full pricing on our Services page!</p>
+                </div>
+                <div class="faq-item">
+                    <h4>⏱️ How long do projects take?</h4>
+                    <p>Most projects complete in 5-10 business days. Rush delivery available in 2-3 days for a 50% rush fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🔄 Do you offer revisions?</h4>
+                    <p>Yes! All projects include 3 rounds of revisions. Additional changes are $25 each.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>📁 What files do I receive?</h4>
+                    <p>You'll get PNG, JPG, PDF, and vector files (AI/EPS) depending on your project needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Widget Placeholder -->
+    <div id="live-chat-widget" class="chat-widget" style="display: none;">
+        <div class="chat-header">
+            <h4>💬 Live Chat with JFox</h4>
+            <button class="close-chat" onclick="closeLiveChat()">×</button>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">
+                <strong>JFox:</strong> Hey! What can I help you with today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message..." id="chat-input">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start the Conversation?</h2>
+            <p>Choose your favorite way to connect and let's bring your art vision to life</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="openLiveChat()">Start Live Chat</button>
+                <a href="contact.html" class="btn btn-secondary">Send Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>JFoxInk.Art</h3>
+                    <p>Creating art that speaks to the streets and souls</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="portfolio.html">Art Gallery</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📘</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JFoxInk.Art. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Live Chat Functionality
+        function openLiveChat() {
+            document.getElementById('live-chat-widget').style.display = 'block';
+        }
+        
+        function closeLiveChat() {
+            document.getElementById('live-chat-widget').style.display = 'none';
+        }
+        
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            if (message) {
+                const messagesContainer = document.querySelector('.chat-messages');
+                messagesContainer.innerHTML += `
+                    <div class="message user-message">
+                        <strong>You:</strong> ${message}
+                    </div>
+                `;
+                
+                // Simulate bot response
+                setTimeout(() => {
+                    messagesContainer.innerHTML += `
+                        <div class="message bot-message">
+                            <strong>JFox:</strong> Thanks for your message! I'll get back to you shortly. For immediate help, try our JFox AI assistant!
+                        </div>
+                    `;
+                    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                }, 1000);
+                
+                input.value = '';
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+        }
+        
+        // Enter key support for chat
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatInput = document.getElementById('chat-input');
+            if (chatInput) {
+                chatInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        sendMessage();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

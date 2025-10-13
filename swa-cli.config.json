@@ -1,0 +1,13 @@
+{
+    "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+    "configurations": {
+        "jfoxink-art": {
+            "appLocation": ".",
+            "outputLocation": ".",
+            "appBuildCommand": "",
+            "apiBuildCommand": "",
+            "appDevserverUrl": "",
+            "apiDevserverUrl": ""
+        }
+    }
+}

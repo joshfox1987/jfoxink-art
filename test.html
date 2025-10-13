@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Auto-Poster Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .test {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .success {
+            background: #e8f5e8;
+            border-color: #4CAF50;
+        }
+
+        .error {
+            background: #ffe8e8;
+            border-color: #f44336;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🧪 Auto-Poster Connection Test</h1>
+
+    <div id="results"></div>
+
+    <button onclick="testStatus()">Test Status Endpoint</button>
+    <button onclick="testMainPage()">Test Main Page</button>
+    <button onclick="testPost()">Test Post Endpoint</button>
+
+    <script>
+        function addResult(test, success, message) {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = `test ${success ? 'success' : 'error'}`;
+            div.innerHTML = `<strong>${test}:</strong> ${message}`;
+            results.appendChild(div);
+        }
+
+        async function testStatus() {
+            try {
+                const response = await fetch('/status');
+                const data = await response.json();
+                addResult('Status API', true, `✅ Working! Uptime: ${Math.round(data.uptime)}s`);
+            } catch (error) {
+                addResult('Status API', false, `❌ Error: ${error.message}`);
+            }
+        }
+
+        async function testMainPage() {
+            try {
+                const response = await fetch('/');
+                if (response.ok) {
+                    addResult('Main Page', true, '✅ Main page loads correctly');
+                } else {
+                    addResult('Main Page', false, `❌ HTTP ${response.status}`);
+                }
+            } catch (error) {
+                addResult('Main Page', false, `❌ Error: ${error.message}`);
+            }
+        }
+
+        async function testPost() {
+            try {
+                const response = await fetch('/post', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        whatnotUrl: 'https://example.com/test',
+                        customMessage: 'Test message'
+                    })
+                });
+                const data = await response.json();
+                addResult('Post API', response.ok, response.ok ? '✅ Post endpoint working' : `❌ ${data.error}`);
+            } catch (error) {
+                addResult('Post API', false, `❌ Error: ${error.message}`);
+            }
+        }
+
+        // Auto-run tests
+        setTimeout(() => {
+            testStatus();
+            testMainPage();
+        }, 1000);
+    </script>
+</body>
+
+</html>

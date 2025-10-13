@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - JFoxInk.Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fredoka+One:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo stuff/teaserjfox.png" alt="JFox Ink Logo" class="nav-logo-img">
+            </div>
+            <div class="dropdown-menu">
+                <button class="dropdown-toggle" id="menuToggle">
+                    <span>Menu</span>
+                    <i class="dropdown-arrow">▼</i>
+                </button>
+                <ul class="dropdown-content" id="dropdownContent">
+                    <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">🎨 Art Gallery</a></li>
+                    <li><a href="services.html" class="nav-link">⚡ Services</a></li>
+                    <li><a href="bio.html" class="nav-link">👤 Bio</a></li>
+                    <li><a href="spreadshirt.html" class="nav-link">🛍️ Shop</a></li>
+                    <li><a href="social.html" class="nav-link">📱 Social Media</a></li>
+                    <li><a href="community.html" class="nav-link">🤝 In the Community</a></li>
+                    <li><a href="chat.html" class="nav-link">💬 Chat with Us</a></li>
+                    <li><a href="jfoxai.html" class="nav-link">🤖 JFox AI</a></li>
+                    <li><a href="contact.html" class="nav-link active">📧 Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">Ready to bring your creative vision to life?</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p style="margin-bottom: 2rem; line-height: 1.6;">
+                        Whether you need a logo, character design, or any custom artwork, I'm here to help bring your ideas to life. 
+                        Let's discuss your project and create something amazing together!
+                    </p>
+                    
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            hello@jfoxink.art
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span>⏰</span>
+                        <div>
+                            <strong>Response Time</strong><br>
+                            Usually within 24 hours
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span>💬</span>
+                        <div>
+                            <strong>Preferred Contact</strong><br>
+                            Email for project inquiries
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Based In</strong><br>
+                            Available for global projects
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div style="margin-top: 2rem;">
+                        <h4 style="font-family: 'Fredoka One', cursive; margin-bottom: 1rem;">Follow My Work</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="Instagram">📸</a>
+                            <a href="#" class="social-icon" title="Twitter">🐦</a>
+                            <a href="#" class="social-icon" title="Facebook">📘</a>
+                            <a href="#" class="social-icon" title="TikTok">🎵</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="font-family: 'Fredoka One', cursive; margin-bottom: 1.5rem; color: var(--text-dark);">
+                        Send Me a Message
+                    </h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 10px; font-size: 1rem;">
+                                <option value="">Select a service</option>
+                                <option value="logo-design">Logo Design</option>
+                                <option value="character-design">Character Design</option>
+                                <option value="digital-illustration">Digital Illustration</option>
+                                <option value="sports-art">Sports Art</option>
+                                <option value="graffiti-style">Graffiti Style Art</option>
+                                <option value="complete-branding">Complete Branding</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget" name="budget" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 10px; font-size: 1rem;">
+                                <option value="">Select budget range</option>
+                                <option value="under-200">Under $200</option>
+                                <option value="200-500">$200 - $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-plus">$1,000+</option>
+                                <option value="discuss">Let's discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 10px; font-size: 1rem;">
+                                <option value="">When do you need this?</option>
+                                <option value="asap">ASAP (Rush fee applies)</option>
+                                <option value="1-week">Within 1 week</option>
+                                <option value="2-weeks">Within 2 weeks</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="flexible">I'm flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Project *</label>
+                            <textarea id="message" name="message" placeholder="Describe your vision, style preferences, and any specific requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message 🚀</button>
+                        
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 1rem; text-align: center;">
+                            * Required fields. I'll get back to you within 24 hours!
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="quick-nav">
+        <div class="container">
+            <h2 class="section-title">Common Questions</h2>
+            <div class="nav-cards">
+                <div class="nav-card">
+                    <div class="card-icon">⏱️</div>
+                    <h3>How long do projects take?</h3>
+                    <p>Most projects are completed within 5-10 business days. Rush orders available for urgent needs.</p>
+                </div>
+                <div class="nav-card">
+                    <div class="card-icon">💰</div>
+                    <h3>How does pricing work?</h3>
+                    <p>Pricing depends on project complexity. I provide detailed quotes after understanding your needs.</p>
+                </div>
+                <div class="nav-card">
+                    <div class="card-icon">🔄</div>
+                    <h3>What about revisions?</h3>
+                    <p>All projects include 3 rounds of revisions to ensure you're 100% satisfied with the result.</p>
+                </div>
+                <div class="nav-card">
+                    <div class="card-icon">📁</div>
+                    <h3>What files do I get?</h3>
+                    <p>You'll receive high-resolution files in multiple formats (PNG, JPG, PDF, and vector files when applicable).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start?</h2>
+            <p>Let's turn your ideas into amazing artwork that stands out</p>
+            <div class="cta-buttons">
+                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                <a href="services.html" class="btn btn-secondary">See Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>JFoxInk.Art</h3>
+                    <p>Creating art that speaks to the streets and souls</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📘</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JFoxInk.Art. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Here you would typically send the data to your server
+                    // For now, we'll show a success message
+                    if (typeof showNotification === 'function') {
+                        showNotification('Thanks for your message! I\'ll get back to you within 24 hours.', 'success');
+                    }
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Log data for development (remove in production)
+                    console.log('Contact form submitted:', data);
+                });
+            }
+            
+            // Add some interactivity to form fields
+            const formInputs = document.querySelectorAll('.form-group input, .form-group select, .form-group textarea');
+            formInputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentNode.style.transform = 'scale(1.02)';
+                    this.parentNode.style.transition = 'transform 0.3s ease';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentNode.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

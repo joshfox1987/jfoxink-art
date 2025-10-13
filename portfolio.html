@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - JFoxInk.Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fredoka+One:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h3>JFox Ink</h3>
+            </div>
+            <div class="sidebar-dropdown-menu">
+                <button class="dropdown-toggle" id="menuToggle">
+                    <span>Navigation</span>
+                    <i class="dropdown-arrow">▼</i>
+                </button>
+                <ul class="dropdown-content" id="dropdownContent">
+                    <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">🎨 Art Gallery</a></li>
+                    <li><a href="services.html" class="nav-link">⚡ Services</a></li>
+                    <li><a href="bio.html" class="nav-link">👤 Bio</a></li>
+                    <li><a href="spreadshirt.html" class="nav-link">🛍️ Shop</a></li>
+                    <li><a href="social.html" class="nav-link">📱 Social Media</a></li>
+                    <li><a href="community.html" class="nav-link">🤝 In the Community</a></li>
+                    <li><a href="chat.html" class="nav-link">💬 Chat with Us</a></li>
+                    <li><a href="jfoxai.html" class="nav-link">🤖 JFox AI</a></li>
+                    <li><a href="contact.html" class="nav-link">📧 Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <div class="page-logo-container">
+                <img src="logo stuff/teaserjfox.png" alt="JFox Logo" class="page-hero-logo">
+            </div>
+            <h1 class="page-title">Art Gallery</h1>
+            <p class="page-subtitle">A collection of my creative journey through art and design</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="logos">Logos</button>
+                <button class="filter-btn" data-filter="characters">Characters</button>
+                <button class="filter-btn" data-filter="sports">Sports Art</button>
+                <button class="filter-btn" data-filter="street-art">Street Art</button>
+                <button class="filter-btn" data-filter="digital">Digital Art</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Logo Work -->
+                <div class="gallery-item" data-category="logos">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>🦊</span>
+                            <h3>JFox Brand Logo</h3>
+                            <p>Personal branding design</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>JFox Brand Logo</h4>
+                        <p>Custom logo design featuring fox elements with graffiti style</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Character Design -->
+                <div class="gallery-item" data-category="characters">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>🎭</span>
+                            <h3>Cartoon Fox</h3>
+                            <p>Character illustration</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Cartoon Fox Character</h4>
+                        <p>Playful fox character design for branding</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Sports Art -->
+                <div class="gallery-item" data-category="sports">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>🏀</span>
+                            <h3>Basketball Player</h3>
+                            <p>Sports silhouette art</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Basketball Silhouette</h4>
+                        <p>Dynamic sports illustration capturing motion</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Street Art -->
+                <div class="gallery-item" data-category="street-art">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>💀</span>
+                            <h3>Skull Art</h3>
+                            <p>Graffiti style design</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Graffiti Skull</h4>
+                        <p>Street art inspired skull with vibrant colors</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Digital Art -->
+                <div class="gallery-item" data-category="digital">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>🎨</span>
+                            <h3>Digital Portrait</h3>
+                            <p>Digital illustration</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Digital Portrait</h4>
+                        <p>Modern digital art with graffiti influences</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- More Logos -->
+                <div class="gallery-item" data-category="logos">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>⚡</span>
+                            <h3>Energy Logo</h3>
+                            <p>Corporate branding</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Energy Company Logo</h4>
+                        <p>Bold corporate logo with dynamic elements</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- More Characters -->
+                <div class="gallery-item" data-category="characters">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>👑</span>
+                            <h3>Queen Character</h3>
+                            <p>Fantasy illustration</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Fantasy Queen</h4>
+                        <p>Detailed character design for gaming</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- More Sports -->
+                <div class="gallery-item" data-category="sports">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>⚽</span>
+                            <h3>Soccer Silhouette</h3>
+                            <p>Action sports art</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Soccer Action</h4>
+                        <p>Dynamic soccer player in motion</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- More Street Art -->
+                <div class="gallery-item" data-category="street-art">
+                    <div class="item-content">
+                        <div class="item-placeholder">
+                            <span>🎯</span>
+                            <h3>Target Design</h3>
+                            <p>Street art concept</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <h4>Target Street Art</h4>
+                        <p>Bold geometric street art design</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Like What You See?</h2>
+            <p>Let's work together to bring your vision to life</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Start a Project</a>
+                <a href="services.html" class="btn btn-secondary">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>JFoxInk.Art</h3>
+                    <p>Creating art that speaks to the streets and souls</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📘</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JFoxInk.Art. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    </div> <!-- End main-content -->
+
+    <script src="script.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
