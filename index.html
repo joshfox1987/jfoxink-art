@@ -1,67 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JFoxInk.Art - Website Live!</title>
+    <title>JFoxInk.Art - TESTING</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background: black;
+            color: lime;
+            font-family: monospace;
             text-align: center;
+            padding: 50px;
+            font-size: 20px;
         }
-        .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .fox { font-size: 6rem; margin-bottom: 20px; }
-        .success {
-            background: rgba(76, 175, 80, 0.3);
+        .box {
+            border: 2px solid lime;
             padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
+            margin: 20px;
+            animation: blink 1s infinite;
         }
-        .info {
-            font-size: 1.2rem;
-            margin: 10px 0;
-        }
-        .timestamp {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            margin-top: 30px;
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="fox">🦊</div>
-        <h1>JFoxInk.Art</h1>
-        <div class="success">
-            <h2>✅ WEBSITE IS LIVE!</h2>
-            <p>Successfully deployed to Azure Static Web Apps</p>
-        </div>
-        <div class="info"><strong>Domain:</strong> jfoxink.art</div>
-        <div class="info"><strong>Status:</strong> Online & Working</div>
-        <div class="info"><strong>Hosted on:</strong> Microsoft Azure</div>
-        <div class="timestamp">Deployed: <span id="timestamp"></span></div>
+    <h1>🦊 JFOXINK.ART 🦊</h1>
+    <div class="box">
+        <h2>WEBSITE IS LIVE!</h2>
+        <p>SUCCESS! Your domain is working!</p>
+        <p>jfoxink.art is now ONLINE!</p>
     </div>
-    
+    <p>If you can see this blinking page, the deployment worked!</p>
     <script>
-        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+        console.log("JFoxInk.Art is LIVE!");
+        document.title = "JFoxInk.Art - SUCCESS!";
     </script>
 </body>
 </html>
